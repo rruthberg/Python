@@ -2,3 +2,5 @@
 *.xls
 *.json
 *.xml
+Dashboards/data/*
+Dashboards/plot_out/*
