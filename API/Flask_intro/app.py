@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 
 app = Flask(__name__) #__name__ gives an applicaiton a specific name
 
@@ -19,6 +19,11 @@ stores = [
         ]
     }
 ]
+
+#Home rendered with render_template
+@app.route("/")
+def home():
+    return render_template('index.html')
 
 #POST /store data: {name:}
 @app.route("/store", methods =["POST"]) #broswer has only GET as default, so need to specify POST
@@ -78,10 +83,5 @@ def get_items_in_store(name):
                 return jsonify({"items":store["items"]})
         return jsonify({"message":"Store not found!"})
 
-
-#Home endpoint, all decorated needs to return something
-@app.route("/") #home page = "/" | decorate main method
-def home():
-    return "Hellooo!"
 
 app.run(port=5000)

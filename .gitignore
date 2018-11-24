@@ -4,3 +4,4 @@
 *.xml
 Dashboards/data/*
 Dashboards/plot_out/*
+API/Flask_rest/venv/*
