@@ -5,3 +5,7 @@
 Dashboards/data/*
 Dashboards/plot_out/*
 API/Flask_rest/venv/*
+API/Store_Flask_SQLAlchemy/venv/*
+.DS_Store
+__pycache__/
+*.pyc
