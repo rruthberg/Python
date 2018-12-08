@@ -6,6 +6,8 @@ Dashboards/data/*
 Dashboards/plot_out/*
 API/Flask_rest/venv/*
 API/Store_Flask_SQLAlchemy/venv/*
+REA_Backend/venv/*
+REA_Backend/*
 .DS_Store
 __pycache__/
 *.pyc
